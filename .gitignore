@@ -1,7 +1,0 @@
-# Build artifacts
-build/
-NewHere
-NewHere_Installer.dmg
-
-# macOS system files
-.DS_Store
