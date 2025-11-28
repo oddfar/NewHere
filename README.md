@@ -19,18 +19,51 @@
 
 ## 安装方法
 
-1. 下载最新的 DMG 文件
-2. 双击打开 DMG
-3. 将应用拖入 Applications 文件夹
-4. 在 Finder 中右键点击任意文件夹，即可在"快速操作"中看到"新建文件"选项
+### 快速安装（推荐）
+
+1. 下载并打开 `NewFileHere.dmg`
+2. 运行自动安装脚本：
+   ```bash
+   ./scripts/install.sh
+   ```
+
+### 手动安装
+
+1. 将 `NewFileHere.app` 拖入 Applications（应用程序）文件夹
+2. 将 `NewFileHere.workflow` 拖入 `~/Library/Services/`
+3. 重启 Finder：`killall Finder`
+
+详细安装说明请查看：[INSTALLATION.md](INSTALLATION.md)
 
 ## 使用方法
 
-1. 在 Finder 中打开任意文件夹
-2. 右键点击空白处
-3. 选择"快速操作" → "新建文件"
-4. 在弹出的对话框中选择要创建的文件类型
-5. 新文件将在当前目录创建
+### 🎯 方式一：Quick Action（需选中文件夹）
+
+1. 在 Finder 中**选中一个文件夹**
+2. 右键点击文件夹
+3. 选择"服务" 或 "快速操作" → "新建文件"
+4. 在弹出的对话框中选择文件类型
+
+**注意**：macOS 限制，Quick Action 只能在选中文件/文件夹时触发。
+
+### ⚡ 方式二：命令行（推荐）
+
+更灵活，可在任意目录使用：
+
+```bash
+# 在当前目录创建文件
+newfile
+
+# 在指定目录创建文件
+newfile -dir ~/Documents
+```
+
+### 🔧 方式三：Finder 工具栏（最方便）
+
+最接近 Windows 的体验！
+
+1. 查看 [INSTALLATION.md](INSTALLATION.md) 中的"方式三"
+2. 创建工具栏应用后，在任意 Finder 窗口点击工具栏按钮即可
 
 ## 自定义配置
 
