@@ -1,0 +1,40 @@
+NewFileHere - 安装说明
+======================
+
+感谢您下载 NewFileHere！
+
+安装步骤：
+=========
+
+1. 将 NewFileHere.app 拖拽到 Applications（应用程序）文件夹
+
+2. 将 NewFileHere.workflow 拖拽到以下位置之一：
+   - ~/Library/Services/           （仅当前用户）
+   - /Library/Services/             （所有用户，需要管理员权限）
+
+3. 重启 Finder 或注销重新登录使 Quick Action 生效
+
+使用方法：
+=========
+
+1. 在 Finder 中打开任意文件夹
+2. 右键点击文件夹中的空白处
+3. 选择 "快速操作" -> "新建文件"
+4. 在弹出的对话框中选择要创建的文件类型
+5. 新文件将在当前目录创建并自动打开
+
+自定义：
+========
+
+您可以编辑以下文件来自定义功能：
+- /Applications/NewFileHere.app/Contents/Resources/config.yaml
+- /Applications/NewFileHere.app/Contents/Resources/templates/
+
+卸载：
+======
+
+删除以下文件即可：
+- /Applications/NewFileHere.app
+- ~/Library/Services/NewFileHere.workflow
+
+作者：zhaoshenchen

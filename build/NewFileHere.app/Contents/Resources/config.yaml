@@ -1,0 +1,75 @@
+# NewFileHere 配置文件
+
+# 支持的文件类型配置
+file_types:
+  # 文本文件
+  - name: "文本文件"
+    extension: "txt"
+    default_name: "新建文本文档"
+    template: "document.txt"
+    
+  - name: "Markdown 文件"
+    extension: "md"
+    default_name: "README"
+    template: "document.md"
+  
+  # Office 文档
+  - name: "Word 文档"
+    extension: "docx"
+    default_name: "新建文档"
+    template: "document.docx"
+    
+  - name: "Excel 表格"
+    extension: "xlsx"
+    default_name: "新建表格"
+    template: "spreadsheet.xlsx"
+    
+  - name: "PowerPoint 演示文稿"
+    extension: "pptx"
+    default_name: "新建演示文稿"
+    template: "presentation.pptx"
+  
+  # 代码文件
+  - name: "Go 源文件"
+    extension: "go"
+    default_name: "main"
+    template: "code.go"
+    
+  - name: "Python 脚本"
+    extension: "py"
+    default_name: "script"
+    template: "script.py"
+    
+  - name: "JavaScript 文件"
+    extension: "js"
+    default_name: "script"
+    template: "script.js"
+    
+  - name: "HTML 文件"
+    extension: "html"
+    default_name: "index"
+    template: "index.html"
+    
+  - name: "CSS 样式表"
+    extension: "css"
+    default_name: "style"
+    template: "style.css"
+    
+  - name: "Java 源文件"
+    extension: "java"
+    default_name: "Main"
+    template: "Main.java"
+
+# 应用设置
+settings:
+  # 文件名冲突处理：append_number（追加数字）或 ask（询问用户）
+  conflict_resolution: "append_number"
+  
+  # 创建后是否打开文件
+  open_after_create: true
+  
+  # 对话框宽度
+  dialog_width: 400
+  
+  # 对话框高度
+  dialog_height: 300
