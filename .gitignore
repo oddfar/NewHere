@@ -1,0 +1,36 @@
+# 编译后的二进制文件（避免忽略源代码目录）
+/newfile
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 测试输出
+*.test
+*.out
+coverage.txt
+coverage.html
+
+# 依赖目录
+vendor/
+
+# IDE 相关
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS 系统文件
+.DS_Store
+._*
+
+# 构建产物
+build/
+dist/
+*.dmg
+*.pkg
+
+# 临时文件
+tmp/
+temp/
